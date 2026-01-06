@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+
+    { "source": "/casino", "destination": "/casino.html" },
+    { "source": "/games", "destination": "/games.html" },
+    { "source": "/bonuses", "destination": "/bonuses.html" },
+    { "source": "/live", "destination": "/live.html" },
+    { "source": "/mobile", "destination": "/mobile.html" },
+    { "source": "/signin", "destination": "/signin.html" }
+  ]
+}
