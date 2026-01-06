@@ -1010,7 +1010,7 @@ button:hover {
   }
   .bonus-text.mobile {
     display: block;
-    min-height: 48px;
+    min-height: 58px;
     line-height: normal;
     padding-bottom: 27px;
   }
