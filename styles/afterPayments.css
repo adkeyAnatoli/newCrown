@@ -1,0 +1,20 @@
+#after-payments {
+  margin: 140px 0;
+}
+#after-payments .text,
+#after-payments h2, #after-payments h3 {
+  color: var(--afterPayments-text-color);
+}
+@media (max-width: 768px) {
+  #after-payments {
+    margin: 64px 0;
+  }
+}
+
+#after-payments ul, #after-faq ul {
+  margin-left: 16px;
+}
+
+#after-payments ul li, #after-faq ul li{
+  list-style: disc inside;
+}

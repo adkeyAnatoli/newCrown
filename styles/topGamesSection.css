@@ -1,0 +1,39 @@
+.topGamesSection {
+  margin: 140px 0;
+}
+.topGames_button {
+  align-self: center;
+}
+
+.topGamesSection h2 {
+  color: var(--topGamesTitle-text-color);
+}
+
+.gameInfo h3,
+.gameInfo .gameBlock_text {
+  font-family: var(--font-family-second);
+  font-size: 24px;
+  font-weight: var(--font-weight-500);
+  background: var(--top-games-text-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gameBlock_text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 1180px) {
+  .topGamesSection {
+    margin: 64px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .topGamesSection > div {
+    gap: 40px;
+  }
+}

@@ -1,0 +1,223 @@
+.bonusDetailSection_wrapper > button {
+  align-self: center;
+}
+.bonusTable {
+  width: 100%;
+  grid-row-gap: 24px;
+  row-gap: 24px;
+  display: grid;
+}
+ .row {
+  display: grid;
+  grid-template-columns: 18% 22% 12% 13% 12% 23%;
+  align-items: center;
+  background: var(--table-body);
+  border-radius: var(--border-radius);
+}
+
+.cell .button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: none;
+}
+.cell .button:hover {
+  transform: scale(1);
+}
+.cell img {
+  max-width: 100%;
+  height: auto;
+}
+.cell .img {
+  filter: var(--shadow);
+}
+.cell {
+  color: var(--table-body-color);
+  font-family: var(--font-family-second);
+  font-size: 20px;
+  font-weight: var(--font-weight-500);
+  line-height: 40px;
+  padding: 9.25px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 88px;
+}
+ .row .cell::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 56px;
+  width: 1px;
+  background-color: var(--after-element);
+}
+ .row .cell.last::after {
+  display: none;
+}
+.bonusTable .tableHead {
+  background: var(--table-head);
+  color: var(--table-head-color);
+  height: 88px;
+  font-family: var(--font-family-second);
+  font-size: 24px;
+  font-weight: var(--font-weight-500);
+}
+.bonusTable .tableHead p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  height: 72px;
+  text-align: center;
+  position: relative;
+  text-transform: capitalize;
+}
+.bonusTable .tableHead p::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 72px;
+  width: 1px;
+  background-color: var(--after-element);
+}
+.bonusTable .tableHead p:last-child::after {
+  display: none;
+}
+.bonusAccordion {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-second);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: var(--font-weight-500);
+  line-height: 40px;
+  color: var(--table-body-color);
+  margin-top: -24px;
+}
+.cell .button-secondary {
+  width: 218px;
+  height: 56px;
+  padding: 2px 8px;
+}
+.tableBody_last::after {
+  display: none;
+}
+
+.tableBody_accordion_block {
+  display: grid;
+  grid-template-columns: 18% 82%;
+}
+.tableBody_accordion_block p {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px 8px 16px;
+  position: relative;
+  border-bottom: 1px solid var(--after-element);
+}
+
+.tableBody_accordion_block p:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: var(--after-element);
+}
+/* @media (max-width: 1100px) {
+  .tableBody_accordion_block {
+    grid-template-columns: 25% 15% 15% 15% 30%;
+  }
+}
+@media (max-width: 850px) {
+  .tableBody_accordion_block {
+    grid-template-columns: 36% 22% 22% 20%;
+  }
+  .tableBody_accordion_block .cell::after {
+    display: none;
+  }
+  .bonusAccordion {
+    font-size: 18px;
+    margin-top: -8px;
+  }
+} */
+
+
+
+@media (max-width: 1000px) {
+  .tableBody_accordion_block {
+    grid-template-columns: 25% 75%;
+  }
+}
+
+@media (max-width: 850px) {
+  .bonusAccordion {
+    font-size: 18px;
+    line-height: normal;
+    margin-top: -8px;
+  }
+
+  .bonusAccordion .lastButton {
+    margin-top: 16px;
+    display: flex;
+    justify-content: end;
+    padding: 0px;
+    height: auto;
+  }
+
+  .bonusAccordion .lastButton button {
+    border-radius: var(--border-radius-button);
+    width: var(--button-accordion-mobile-width) !important;
+  }
+  .tableBody_accordion_block {
+    grid-template-columns: 36% 64%;
+  }
+  .tableBody_accordion_block p {
+    padding: 12px 0 13px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bonusAccordion {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .tableBody_accordion_block p {
+    padding: 4px 8px;
+  }
+}
+
+
+
+
+@media (max-width: 850px) {
+  .bonusTable .tableHead {
+    font-size: 18px;
+    line-height: 21px;
+    height: 74px;
+  }
+}
+@media (max-width: 850px) {
+  .bonusTable .tableHead > p {
+    padding: 0 11px;
+  }
+
+  .bonusTable .tableHead > p:after {
+    display: none;
+  }
+
+  .bonusTable .tableHead > p:first-child:after {
+    display: block;
+    height: 58px;
+  }
+}
+
+@media (max-width: 380px) {
+  .headerCell {
+    padding: 0;
+  }
+}

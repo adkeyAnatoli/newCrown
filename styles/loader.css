@@ -1,0 +1,61 @@
+.loader-body {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  transition: 0.5s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader__img {
+  width: 120px;
+  height: 120px;
+  transform: scale(1);
+  animation: pulse-black 2s infinite;
+  border-radius: 50%;
+}
+@keyframes pulse-black {
+  0% {
+    transform: scale(0.8);
+    box-shadow: 0 0 0 20px #ffffff;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px transparent;
+  }
+
+  100% {
+    transform: scale(0.8);
+    box-shadow: 0 0 0 20px #ffffff;
+  }
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  border: 12px var(--topCasino-welcome) solid;
+  border-radius: 50%;
+  position: absolute;
+  border-top-color: #ffffff;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  -webkit-animation: 1s spin infinite linear;
+  -o-animation: 1s spin infinite linear;
+  animation: 1s spin infinite linear;
+}
+.loader-body.done {
+  visibility: hidden;
+  opacity: 0;
+}
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

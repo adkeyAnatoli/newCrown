@@ -1,0 +1,118 @@
+#app > div {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+#app .text,
+#app h2,
+#app h3 {
+  color: var(--app-text-color);
+}
+.AppFirstBlock {
+  display: flex;
+  justify-content: space-between;
+}
+.appSection_textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 548px;
+}
+.appSection_imgBlock {
+  margin-right: 46px;
+  margin-top: 16px;
+}
+.appSection_hiddenImg {
+  display: none;
+}
+.appButton {
+  border: none;
+  transform: none !important;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.downloadBlock {
+  display: flex;
+  gap: 24px;
+}
+
+/* .downloadBlock .desktop {
+
+} */
+
+.downloadBlock.mobile {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .appSection_imgBlock {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1180px) {
+  .appSection_imgBlock {
+    margin-right: 0px;
+  }
+  .appSection_imgBlock img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 950px) {
+  .appSection_imgBlock {
+    display: none;
+  }
+  .downloadBlock.desktop {
+    display: none !important;
+  }
+  .downloadBlock.mobile {
+    display: flex !important;
+  }
+  .appSection_hiddenImg {
+    display: block;
+    height: auto;
+    align-self: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 496px;
+  }
+  .appSection_textBlock {
+    width: auto;
+    gap: 24px;
+  }
+  .downloadBlock {
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #app {
+    /* padding: 64px 0px; */
+  }
+  .appSection_textBlock h2 {
+    font-size: 32px;
+  }
+  #app > div {
+    gap: 40px;
+  }
+  .downloadBlock {
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  #app .lastBlock {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .appSection_hiddenImg {
+    width: 100%;
+  }
+}

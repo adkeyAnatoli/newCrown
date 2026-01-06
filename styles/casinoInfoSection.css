@@ -1,0 +1,74 @@
+.casinoInfoSection_wrapper {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+}
+
+.casinoInfoSection_wrapper ul,
+.casinoInfoSection_wrapper ol {
+  margin-left: 20px;
+}
+.casinoInfoSection_wrapper ul li {
+  list-style-type: disc;
+}
+
+.casinoInfoSection_wrapper .text, .casinoInfoSection_wrapper h2 {
+  color: var(--casinoInfo-text-color);
+}
+
+.casinoInfoSection_wrapper ol li {
+  list-style-type: decimal;
+}
+.casinoInfoSection_firstBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.casinoInfoSection_firstBlock_text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 50%;
+}
+
+.casinoInfoSection_firstBlock_image {
+  width: 41%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.casinoInfoSection_middleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 1390px) {
+  .casinoInfoSection_firstBlock_image {
+    max-width: 676px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .casinoInfoSection_firstBlock_image {
+    display: none;
+  }
+  .casinoInfoSection_firstBlock_text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #casino-info {
+    padding: 40px 0;
+  }
+  .casinoInfoSection_wrapper {
+    gap: 40px;
+  }
+}

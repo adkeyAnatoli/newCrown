@@ -1,0 +1,8 @@
+#faq {
+  margin: 140px 0;
+}
+@media (max-width: 1180px) {
+  #faq {
+    margin: 64px auto;
+  }
+}
