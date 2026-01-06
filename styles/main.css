@@ -1049,6 +1049,7 @@ button:hover {
   }
   .bonus-text.mobile {
     padding-bottom: 14px;
+    max-width: 325px;
   }
 }
 @media (max-width: 350px) {

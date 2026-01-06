@@ -13,7 +13,6 @@ export function renderBonus() {
   mobile.innerHTML = `${appState.offer?.bonuses?.welcome_bonus || ""}`;
 
   const action = qs(".bonusButton");
-  action.textContent = "Claim Bonus";
   action.addEventListener("click", (ev) => {
     ev.preventDefault();
     if (appState.offer) navigateToOffer(appState.offer.id, appState.offer.link);
