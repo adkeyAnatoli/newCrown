@@ -82,6 +82,13 @@
       type="font/woff2"
       crossorigin
     />
+    <link
+      rel="preload"
+      href="/styles/app.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/styles/app.min.css" /></noscript>
 
     <style>
       @font-face {
@@ -148,13 +155,6 @@
       href="/public/sectionImg/slot1.webp"
       fetchpriority="high"
     />
-    <link
-      rel="preload"
-      href="/styles/app.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="/styles/app.min.css" /></noscript>
     <link rel="icon" href="public/svg/icon.svg" />
     <link rel="apple-touch-icon" href="public/icons/icon57.png" sizes="57x57" />
     <link rel="apple-touch-icon" href="public/icons/icon60.png" sizes="60x60" />
