@@ -49,12 +49,14 @@
       rel="preload"
       as="image"
       href="/public/sectionImg/slot1-mobile.webp"
+      media="(max-width: 875px)"
       fetchpriority="high"
     />
-    <link
+     <link
       rel="preload"
       as="image"
       href="/public/sectionImg/slot1.webp"
+      media="(min-width: 876px)"
       fetchpriority="high"
     />
 
@@ -131,12 +133,7 @@
       crossorigin
     />
 
-    <link
-      rel="preload"
-      href="/styles/main.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
+   <link rel="stylesheet" href="/styles/app.min.css" />
     <style>
       @font-face {
         font-family: "Charger";

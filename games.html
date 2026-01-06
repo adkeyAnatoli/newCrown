@@ -80,12 +80,7 @@
       type="font/woff2"
       crossorigin
     />
-    <link
-      rel="preload"
-      href="/styles/app.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
+    <link rel="stylesheet" href="/styles/app.min.css" />
     <noscript><link rel="stylesheet" href="/styles/app.min.css" /></noscript>
 
     <style>
@@ -145,12 +140,14 @@
       rel="preload"
       as="image"
       href="/public/sectionImg/slot1-mobile.webp"
+      media="(max-width: 875px)"
       fetchpriority="high"
     />
-    <link
+     <link
       rel="preload"
       as="image"
       href="/public/sectionImg/slot1.webp"
+      media="(min-width: 876px)"
       fetchpriority="high"
     />
     <link rel="icon" href="public/svg/icon.svg" />
