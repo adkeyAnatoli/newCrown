@@ -935,7 +935,7 @@ button:hover {
 .bonusSection_left {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  /* gap: 48px; */
   width: 420px;
   align-items: flex-start;
 }
@@ -962,6 +962,7 @@ button:hover {
 .bonus-text.desktop {
   display: block;
   min-height: 70px;
+  padding-bottom: 48px;
 }
 .bonus-text.mobile {
   display: none;
@@ -1005,13 +1006,13 @@ button:hover {
     align-items: center;
     text-align: center;
     width: auto;
-    gap: 27px;
     margin-top: 0;
   }
   .bonus-text.mobile {
     display: block;
     min-height: 48px;
     line-height: normal;
+    padding-bottom: 27px;
   }
   .bonus-text.desktop {
     display: none;
@@ -1043,11 +1044,11 @@ button:hover {
   .bonusSection_right {
     width: 330px;
   }
-  .bonusSection_left {
-    gap: 14px;
-  }
   .bonusSection_left p {
     font-size: 20px;
+  }
+  .bonus-text.mobile {
+    padding-bottom: 14px;
   }
 }
 @media (max-width: 350px) {
