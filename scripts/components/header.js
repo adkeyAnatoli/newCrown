@@ -50,8 +50,8 @@ export function renderHeader() {
   const select = document.getElementById("select");
   const path = window.location.pathname;
 
-  if (path.startsWith("/en-AU")) {
-    select.value = "/en-AU/";
+  if (path.startsWith("/en-au")) {
+    select.value = "/en-au/";
   } else {
     select.value = "/";
   }
