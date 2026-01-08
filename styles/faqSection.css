@@ -1,8 +1,10 @@
-#faq {
+#faq,
+#after-support {
   margin: 140px 0;
 }
 @media (max-width: 1180px) {
-  #faq {
+  #faq,
+  #after-support {
     margin: 64px auto;
   }
 }
