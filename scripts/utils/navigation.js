@@ -2,7 +2,7 @@ export function navigateToOffer(id, link) {
   localStorage.setItem("redirectLink", link);
   localStorage.setItem("redirectId", id);
 
-  window.open("./casino.html", "_blank", "noopener");
+  window.open("/casino.html", "_blank", "noopener");
 }
 
 export function setupRedirectIfNeeded() {
@@ -25,12 +25,12 @@ export function setupRedirectIfNeeded() {
       }, 900);
     } else {
       setTimeout(() => {
-        window.location.replace("./index.html");
+        window.location.replace("/index.html");
       }, 1000);
     }
   } catch {
     setTimeout(() => {
-      window.location.replace("./index.html");
+      window.location.replace("/index.html");
     }, 1000);
   }
 }

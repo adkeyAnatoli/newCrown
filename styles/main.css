@@ -11,6 +11,7 @@
 @import "./bonusDetails.css";
 @import "./not-found.css";
 @import "./localeSwitcher.css";
+@import "./table.css";
 
 @font-face {
   font-family: "Roboto";
@@ -38,8 +39,8 @@
 
 :root {
   --main-bg: #171717;
-  --color-white: #FFFFFF;
-  --color-black: #FFFFFF;
+  --color-white: #ffffff;
+  --color-black: #ffffff;
   --bg-section-second: #414141;
   /* --bg-section-second: #FFA00A; */
   --bg-header: #414141;
@@ -59,25 +60,25 @@
   --font-weight-500: 500;
   --after-element: #ffffff33;
   --after-element-second: #00000033;
-  --button-primary-bg: #B49C68;
+  --button-primary-bg: #b49c68;
   /* --button-primary-bg: linear-gradient(to right, #FFBA47 0%, #FDE597 100%); */
-  --button-primary-color: #FFFFFF;
+  --button-primary-color: #ffffff;
   --button-font-size-primary: 28px;
   --button-primary-width: 340px;
   --button-primary-height: 82px;
   /* --button-secondary-bg: linear-gradient(to right, #00C0AA 0%, #A3FFF4 100%); */
-  --button-secondary-bg: #68AFB4;
-  --button-secondary-color: #FFFFFF;
+  --button-secondary-bg: #68afb4;
+  --button-secondary-color: #ffffff;
   --button-secondary-width: 178px;
   --button-secondary-height: 52px;
   --button-primary-mobile-width: 280px;
   --button-font-size-mobile-primary: 24px;
   --button-secondary-mobile-width: 200px;
   --button-font-size-mobile-secondary: 18px;
-  --header-active-color: #B49C68;
+  --header-active-color: #b49c68;
   --header-second-desktop-button-width: 200px;
   --header-buttons-desktop-height: 40px;
-  --header-buttons-color-text: #FFFFFF;
+  --header-buttons-color-text: #ffffff;
   --button-font-size-desktop-header: 14px;
   --button-radius-desktop: 100px;
   --header-buttons-mobile-height: 28px;
@@ -87,32 +88,32 @@
   --button-accordion-mobile-width: 200px;
   --svg--info-width: 26px;
   --table-head: #222222;
-  --table-head-color: #FFFFFF;
+  --table-head-color: #ffffff;
   --table-body: #414141;
-  --table-body-color: #FFFFFF;
-  --welcome-bonus-color: #FFFFFF;
-  --bonus-section-text: #FFFFFF;
-  --bonus-section-bg: linear-gradient(to right, #C41010 0%, #0AC7DD 100%);
+  --table-body-color: #ffffff;
+  --welcome-bonus-color: #ffffff;
+  --bonus-section-text: #ffffff;
+  --bonus-section-bg: linear-gradient(to right, #c41010 0%, #0ac7dd 100%);
   --h1-section-bg: #414141;
-  --h1-section-color-text: #FFFFFF;
-  --topCasino-welcome: #B49C68;
-  --top-casino-text-color: #FFFFFF;
-  --top-games-text-color: #B49C68;
+  --h1-section-color-text: #ffffff;
+  --topCasino-welcome: #b49c68;
+  --top-casino-text-color: #ffffff;
+  --top-games-text-color: #b49c68;
   /* --payments-table-head: #0f4e8b;
   --payments-table-body: #e4f2ff;
   --payments-text-left: #0084ff;
   --software-provider-card-bg: #0f4e8b; */
-  --faq-question-color: #FFFFFF;
-  --faq-text-color: #FFFFFF;
-  --faqTitle-text-color: #FFFFFF;
-  --support-text-color: #FFFFFF;
-  --last-text-color: #FFFFFF;
-  --casinoInfo-text-color: #FFFFFF;
-  --app-text-color: #FFFFFF;
-  --topCasino-text-color: #FFFFFF;
-  --bonusDetailsTitle-text-color: #FFFFFF;
-  --topGamesTitle-text-color: #FFFFFF;
-  --afterPayments-text-color: #FFFFFF;
+  --faq-question-color: #ffffff;
+  --faq-text-color: #ffffff;
+  --faqTitle-text-color: #ffffff;
+  --support-text-color: #ffffff;
+  --last-text-color: #ffffff;
+  --casinoInfo-text-color: #ffffff;
+  --app-text-color: #ffffff;
+  --topCasino-text-color: #ffffff;
+  --bonusDetailsTitle-text-color: #ffffff;
+  --topGamesTitle-text-color: #ffffff;
+  --afterPayments-text-color: #ffffff;
 }
 
 html {
@@ -706,7 +707,7 @@ button:hover {
   font-weight: var(--font-weight-500);
   line-height: normal;
   /* color: var(--topCasino-welcome); */
-  background: linear-gradient(to bottom, #FDE597 0%, #FFBA47 100%);
+  background: linear-gradient(to bottom, #fde597 0%, #ffba47 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -62,7 +62,7 @@ export function renderBonusDetails() {
     img.className = "img";
     img.loading = "lazy";
     img.onerror = function () {
-      this.src = "./public/images/casino-placeholder.webp";
+      this.src = "/public/images/casino-placeholder.webp";
     };
     cellLogo.appendChild(img);
 
@@ -80,7 +80,7 @@ export function renderBonusDetails() {
     const cellInfo = createEl("div", { className: "cell" });
     const btnInfo = createEl("button", { className: "button" });
     const infoIcon = createEl("img");
-    infoIcon.src = "./public/svg/info.svg";
+    infoIcon.src = "/public/svg/info.svg";
     infoIcon.width = 24;
     infoIcon.height = 24;
     infoIcon.alt = "Info";

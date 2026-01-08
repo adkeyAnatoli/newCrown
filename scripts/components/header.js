@@ -18,14 +18,16 @@ export function renderHeader() {
   });
 
   const burger = qs(".hamburger");
-  burger.addEventListener("click", (ev) => {
-    ev.preventDefault();
-    burger.classList.toggle("open");
-    const ulBlock = header.querySelector(".ulBlock");
-    if (ulBlock) {
-      ulBlock.classList.toggle("open");
-    }
-  });
+  if (burger) {
+    burger.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      burger.classList.toggle("open");
+      const ulBlock = header.querySelector(".ulBlock");
+      if (ulBlock) {
+        ulBlock.classList.toggle("open");
+      }
+    });
+  }
 
   if (offer) {
     const play = header.querySelector(".register");
@@ -37,7 +39,7 @@ export function renderHeader() {
       });
     }
   }
-  
+
   const copyrightElement = document.querySelector(".copyrightRight");
   if (copyrightElement) {
     copyrightElement.textContent = copyrightElement.textContent.replace(
@@ -45,4 +47,16 @@ export function renderHeader() {
       new Date().getFullYear()
     );
   }
+  const select = document.getElementById("select");
+  const path = window.location.pathname;
+
+  if (path.startsWith("/en-AU")) {
+    select.value = "/en-AU/";
+  } else {
+    select.value = "/";
+  }
+
+  select.addEventListener("change", () => {
+    window.location.href = select.value;
+  });
 }

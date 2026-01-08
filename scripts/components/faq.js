@@ -16,7 +16,7 @@ export function renderFAQ() {
       faqText.style.display = isOpen ? "none" : "block";
       const icon = item.querySelector("img");
       if (icon) {
-        icon.src = isOpen ? "./public/svg/plus.svg" : "./public/svg/minus.svg";
+        icon.src = isOpen ? "/public/svg/plus.svg" : "/public/svg/minus.svg";
       }
     });
   });

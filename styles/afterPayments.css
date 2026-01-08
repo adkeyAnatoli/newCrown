@@ -11,10 +11,13 @@
   }
 }
 
-#after-payments ul, #after-faq ul {
+#after-payments ul, #after-faq ul, #after-payments ol {
   margin-left: 16px;
 }
 
 #after-payments ul li, #after-faq ul li{
   list-style: disc inside;
+}
+#after-payments ol li {
+  list-style: decimal inside;
 }

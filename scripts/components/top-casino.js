@@ -43,7 +43,7 @@ export function renderTopCasino() {
       img.height = 76;
       img.loading = "lazy";
       img.onerror = function () {
-        this.src = "./public/images/casino-placeholder.webp";
+        this.src = "/public/images/casino-placeholder.webp";
       };
 
       const h3 = createEl("h3", { text: offer.name });

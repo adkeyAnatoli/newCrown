@@ -32,12 +32,12 @@ export function renderTopGames() {
 
     img.src = game.image
       ? `https://api.adkey-seo.com/storage/images/games/${game.image}`
-      : "./public/images/game-placeholder.webp";
+      : "/public/images/game-placeholder.webp";
     img.alt = `${game.name} in ${siteName}`;
     img.title = `${game.name} in ${siteName}`;
     img.loading = 'lazy';
     img.onerror = function () {
-      this.src = "./public/images/game-placeholder.webp";
+      this.src = "/public/images/game-placeholder.webp";
     };
 
     const info = createEl("div", { className: "gameInfo" });
@@ -46,7 +46,7 @@ export function renderTopGames() {
     const spanText = createEl("span");
     spanText.textContent = "Play Now";
     const play = createEl("img");
-    play.src = "./public/svg/icon-play.svg";
+    play.src = "/public/svg/icon-play.svg";
     play.width = 32;
     play.height = 31;
     play.alt = "Play";
