@@ -1007,6 +1007,7 @@ button:hover {
     text-align: center;
     width: auto;
     margin-top: 0;
+    min-height: 118px;
   }
   .bonus-text.mobile {
     display: block;
@@ -1212,11 +1213,6 @@ button:hover {
   .button-primary {
     font-size: 18px;
     padding: 10px 14px;
-  }
-}
-
-@media (max-width: 380px) {
-  .button-primary {
     height: 60px;
     width: 270px;
   }
