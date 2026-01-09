@@ -12,6 +12,7 @@
     { "source": "/en-au", "destination": "/en-au/index.html" },
     { "source": "/en-au/", "destination": "/en-au/index.html" },
 
+    { "source": "/en-au/app", "destination": "/en-au/app.html" },
     { "source": "/en-au/register", "destination": "/en-au/register.html" },
     { "source": "/en-au/pokies", "destination": "/en-au/pokies.html" },
     { "source": "/en-au/melbourne", "destination": "/en-au/melbourne.html" },
