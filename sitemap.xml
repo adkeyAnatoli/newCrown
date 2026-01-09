@@ -3,37 +3,53 @@
 	<url>
 		<loc>https://crowncasino-online.com/</loc>
 		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
-		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>https://crowncasino-online.com/games</loc>
 		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
-		<priority>0.9</priority>
 	</url>
 	<url>
 		<loc>https://crowncasino-online.com/bonuses</loc>
 		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
-		<priority>0.9</priority>
 	</url>
 	<url>
 		<loc>https://crowncasino-online.com/live</loc>
 		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
-		<priority>0.8</priority>
 	</url>
 	<url>
 		<loc>https://crowncasino-online.com/mobile</loc>
 		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
-		<priority>0.7</priority>
 	</url>
 	<url>
 		<loc>https://crowncasino-online.com/signin</loc>
 		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
-		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>https://crowncasino-online.com/en-AU/</loc>
+		<loc>https://crowncasino-online.com/en-au/</loc>
 		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
-		<priority>0.6</priority>
 	</url>
-
+	<url>
+		<loc>https://crowncasino-online.com/en-au/app</loc>
+		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
+	</url>
+	<url>
+		<loc>https://crowncasino-online.com/en-au/register</loc>
+		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
+	</url>
+	<url>
+		<loc>https://crowncasino-online.com/en-au/pokies</loc>
+		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
+	</url>
+	<url>
+		<loc>https://crowncasino-online.com/en-au/melbourne</loc>
+		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
+	</url>
+	<url>
+		<loc>https://crowncasino-online.com/en-au/perth</loc>
+		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
+	</url>
+	<url>
+		<loc>https://crowncasino-online.com/en-au/sydney</loc>
+		<lastmod>2026-01-08T17:41:43+01:00</lastmod>
+	</url>
 </urlset>

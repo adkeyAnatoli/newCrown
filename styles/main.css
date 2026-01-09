@@ -706,11 +706,11 @@ button:hover {
   font-style: normal;
   font-weight: var(--font-weight-500);
   line-height: normal;
-  /* color: var(--topCasino-welcome); */
-  background: linear-gradient(to bottom, #fde597 0%, #ffba47 100%);
+  color: var(--topCasino-welcome);
+  /* background: linear-gradient(to bottom, #fde597 0%, #ffba47 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   font-family: var(--font-family-second);
 }
 .cardCasino p.offer {
@@ -1057,7 +1057,7 @@ button:hover {
 @media (max-width: 350px) {
   .bonusSection_right {
     width: 300px;
-    height: 180px;
+    height: 165px;
   }
   .bonus-text.mobile {
     min-height: 72px;
@@ -1217,6 +1217,13 @@ button:hover {
     height: 60px;
     width: 270px;
   }
+  .bonusSection {
+    background: url("../public/sectionImg/slot1-mobile.webp") no-repeat top 10%
+      center / auto 30%;
+  }
+  .bonusSection_wrapper {
+    gap: 0px;
+  }
 }
 
 @media (max-width: 300px) {
@@ -1228,6 +1235,14 @@ button:hover {
   .button-primary {
     width: auto;
     height: auto;
+  }
+}
+@media (min-width: 1441px) {
+  .header {
+    padding: 0 160px;
+  }
+  header .header_wrapper {
+    max-width: none;
   }
 }
 @media (max-width: 1100px) {

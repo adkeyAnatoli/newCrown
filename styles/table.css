@@ -60,6 +60,16 @@
   }
   .payment-table .text {
     font-size: 18px;
+    word-break: normal;
+    word-wrap: normal;
+  }
+}
+@media (max-width: 600px) {
+  .payment-table .text {
+    font-size: 16px;
+  }
+  .payment-table th {
+    padding: 10px 14px;
   }
 }
 @media (max-width: 520px) {
