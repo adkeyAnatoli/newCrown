@@ -8,6 +8,12 @@
     { "source": "/live", "destination": "/live.html" },
     { "source": "/mobile", "destination": "/mobile.html" },
     { "source": "/signin", "destination": "/signin.html" },
-    { "source": "/en-AU/", "destination": "/en-AU/index.html" }
+
+    { "source": "/en-au/", "destination": "/en-au/index.html" },
+    { "source": "/en-au/register", "destination": "/en-au/register.html" },
+    { "source": "/en-au/pokies", "destination": "/en-au/pokies.html" },
+    { "source": "/en-au/melbourne", "destination": "/en-au/melbourne.html" },
+    { "source": "/en-au/perth", "destination": "/en-au/perth.html" },
+    { "source": "/en-au/sydney", "destination": "/en-au/sydney.html" }
   ]
 }
