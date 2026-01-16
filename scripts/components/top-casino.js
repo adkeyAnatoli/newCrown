@@ -42,6 +42,8 @@ export function renderTopCasino() {
       img.width = 190;
       img.height = 76;
       img.loading = "lazy";
+      img.decoding = "async";
+      img.fetchPriority = "low";
       img.onerror = function () {
         this.src = "/public/images/casino-placeholder.webp";
       };

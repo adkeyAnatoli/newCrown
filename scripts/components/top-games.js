@@ -36,6 +36,8 @@ export function renderTopGames() {
     img.alt = `${game.name} in ${siteName}`;
     img.title = `${game.name} in ${siteName}`;
     img.loading = 'lazy';
+    img.width = 264;
+    img.height = 142;
     img.onerror = function () {
       this.src = "/public/images/game-placeholder.webp";
     };
