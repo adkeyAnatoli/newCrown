@@ -7,57 +7,8 @@
   row-gap: 24px;
   display: grid;
 }
- .row {
-  display: grid;
-  grid-template-columns: 18% 22% 12% 13% 12% 23%;
-  align-items: center;
-  background: var(--table-body);
-  border-radius: var(--border-radius);
-}
 
-.cell .button {
-  background: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: none;
-}
-.cell .button:hover {
-  transform: scale(1);
-}
-.cell img {
-  max-width: 100%;
-  height: auto;
-}
-.cell .img {
-  filter: var(--shadow);
-}
-.cell {
-  color: var(--table-body-color);
-  font-family: var(--font-family-second);
-  font-size: 20px;
-  font-weight: var(--font-weight-500);
-  line-height: 40px;
-  padding: 9.25px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 88px;
-}
- .row .cell::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  height: 56px;
-  width: 1px;
-  background-color: var(--after-element);
-}
- .row .cell.last::after {
-  display: none;
-}
+
 .bonusTable .tableHead {
   background: var(--table-head);
   color: var(--table-head-color);
@@ -97,11 +48,6 @@
   line-height: 40px;
   color: var(--table-body-color);
   margin-top: -24px;
-}
-.cell .button-secondary {
-  width: 218px;
-  height: 56px;
-  padding: 2px 8px;
 }
 .tableBody_last::after {
   display: none;

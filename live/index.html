@@ -62,8 +62,10 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="/styles/app.min.css" />
-    <noscript><link rel="stylesheet" href="/styles/app.min.css" /></noscript>
+    <link rel="stylesheet" href="/styles/critical.min.css">
+<link rel="preload" href="/styles/rest.min.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/styles/rest.min.css"></noscript>
     <link rel="preconnect" href="https://api.adkey-seo.com" crossorigin />
     <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
 
@@ -561,7 +563,12 @@
         <div class="wrapper container">
           <div class="logo">
             <a href="/" class="scroll" aria-label="Scroll to top">
-              <img src="/public/svg/logo.svg" alt="Crown Casino Online Logo" />
+              <img
+                src="./public/svg/logo.svg"
+                width="84"
+                height="48"
+                alt="Crown Casino Online Logo"
+              />
             </a>
           </div>
           <div class="payments">
