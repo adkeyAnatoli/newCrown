@@ -305,11 +305,104 @@ button:hover {
   background: var(--bonus-section-bg);
 }
 .bonusSection {
-  background: url("/public/sectionImg/slot1.webp") no-repeat top 50% left 83% /
-    auto 82%;
+  /* background: url("/public/sectionImg/slot1.webp") no-repeat top 50% left 83% /
+    auto 82%; */
   max-width: 1440px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  /* height: auto;
+  min-height: 600px; */
 }
+.heroMedia {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.heroImg {
+  position: absolute;
+  left: auto;
+  bottom: auto;
+
+  right: 11%;
+  top: 50px;
+
+  width: 493px;
+  height: auto;
+
+  object-fit: contain;
+}
+
+@media screen and (min-width: 1500px) {
+  .heroImg {
+    right: 10%;
+    top: 50px;
+    width: 493px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .heroImg {
+    right: 9%;
+    top: 80px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1085px) {
+  .heroImg {
+    right: 9%;
+    top: 110px;
+    width: 310px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .heroImg {
+    right: 9%;
+    top: 110px;
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .heroImg {
+    right: 35%;
+    top: 21px;
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .heroImg {
+    right: 23%;
+    top: 21px;
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .heroImg {
+    right: 34%;
+    top: 20px;
+    width: 182px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .heroImg {
+    right: 30%;
+    top: 20px;
+    width: 132px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .heroImg {
+    right: 31%;
+    top: 20px;
+    width: 132px;
+  }
+}
+
 .bonusSection_wrapper {
   display: flex;
   justify-content: space-between;
@@ -350,7 +443,7 @@ button:hover {
 .bonus-text.mobile {
   display: none;
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .bonusSection {
     background: url("/public/sectionImg/slot1.webp") no-repeat top 50% left 85% /
       auto 75%;
@@ -367,17 +460,17 @@ button:hover {
     background: url("/public/sectionImg/slot1.webp") no-repeat top 50% left 85% /
       auto 60%;
   }
-}
+} */
 @media (max-width: 875px) {
   .bonusSection_wrapper {
     flex-direction: column-reverse;
     gap: 53px;
     padding-bottom: 40px;
   }
-  .bonusSection {
+  /* .bonusSection {
     background: url("/public/sectionImg/slot1-mobile.webp") no-repeat top 9%
       center / auto 54%;
-  }
+  } */
   .bonusSection_right {
     width: 576px;
     height: 317px;
@@ -412,10 +505,10 @@ button:hover {
   }
 }
 @media (max-width: 550px) {
-  .bonusSection {
+  /* .bonusSection {
     background: url("/public/sectionImg/slot1-mobile.webp") no-repeat top 10%
       center / auto 46%;
-  }
+  } */
   .bonusSection_wrapper {
     gap: 51px;
   }
@@ -719,10 +812,10 @@ button:hover {
     height: 60px;
     width: 270px;
   }
-  .bonusSection {
+  /* .bonusSection {
     background: url("/public/sectionImg/slot1-mobile.webp") no-repeat top 10%
       center / auto 30%;
-  }
+  } */
   .bonusSection_wrapper {
     gap: 0px;
   }
