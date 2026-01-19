@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Charger";
+  src: url("/fonts/Charger-Hemi.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Black";
+  src: url("/fonts/Roboto-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --main-bg: #171717;
   --color-white: #ffffff;
@@ -92,7 +107,9 @@ header {
   max-height: 96px;
 }
 button {
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
   cursor: pointer;
 }
 button:hover {
@@ -277,7 +294,7 @@ button:hover {
 @media (max-width: 768px) {
   .h1Section {
     padding: 40px 0;
-    min-height: 100px;
+    min-height: 180px;
   }
 
   .h1Section > div {
@@ -285,7 +302,7 @@ button:hover {
   }
 
   .h1Section h1 {
-    padding: 26px 13px;
+    padding: 38px 13px;
     font-size: 20px;
   }
 }
@@ -352,20 +369,20 @@ button:hover {
 }
 @media (max-width: 1200px) {
   .bonusSection {
-    background: url("/public/sectionImg/slot1.webp") no-repeat top 50% left 85% /
-      auto 75%;
+    background: url("/public/sectionImg/slot1.webp") no-repeat top 50% left
+      85% / auto 75%;
   }
 }
 @media (max-width: 1085px) {
   .bonusSection {
-    background: url("/public/sectionImg/slot1.webp") no-repeat top 50% left 80% /
-      auto 65%;
+    background: url("/public/sectionImg/slot1.webp") no-repeat top 50% left
+      80% / auto 65%;
   }
 }
 @media (max-width: 1000px) {
   .bonusSection {
-    background: url("/public/sectionImg/slot1.webp") no-repeat top 50% left 85% /
-      auto 60%;
+    background: url("/public/sectionImg/slot1.webp") no-repeat top 50% left
+      85% / auto 60%;
   }
 }
 @media (max-width: 875px) {
@@ -390,11 +407,11 @@ button:hover {
     text-align: center;
     width: auto;
     margin-top: 0;
-    min-height: 118px;
+    min-height: 163px;
   }
   .bonus-text.mobile {
     display: block;
-    min-height: 62px;
+    min-height: 86px;
     line-height: normal;
     padding-bottom: 27px;
   }
@@ -709,6 +726,19 @@ button:hover {
   h2.title-white,
   h2.title-black {
     font-size: 26px;
+  }
+}
+@media (max-width: 425px) {
+  .h1Section {
+    min-height: 160px;
+  }
+  .h1Section h1 {
+    min-height: 80px;
+  }
+}
+@media (max-width: 375px) {
+  .bonusSection {
+    min-height: 429px;
   }
 }
 
