@@ -225,7 +225,10 @@ button:hover {
     left: 0;
   }
   .ulBlock li a {
-    font-size: 32px;
+    font-size: 32px !important;
+  }
+  .navBlock .ulBlock {
+    gap: 24px !important;
   }
 }
 
@@ -245,6 +248,9 @@ button:hover {
   width: var(--header-second-desktop-button-width);
   background: var(--button-primary-bg);
   color: var(--header-buttons-color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .h1Section {
   background: var(--main-bg);
@@ -549,6 +555,9 @@ button:hover {
   font-weight: var(--font-weight-third);
   /* text-transform: uppercase; */
   border-radius: var(--border-radius-button);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .button-secondary {
   padding: 2px 18px;
@@ -561,6 +570,9 @@ button:hover {
   height: var(--button-secondary-height);
   /* text-transform: uppercase; */
   border-radius: var(--border-radius-button);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .text {
   font-family: var(--font-family-second);
@@ -627,7 +639,7 @@ button:hover {
   line-height: 23.44px;
 }
 
-.cardCasino button {
+.cardCasino .button-secondary {
   width: var(--button-secondary-width);
   margin-top: auto;
 }
@@ -668,7 +680,7 @@ button:hover {
     padding: 16px 0;
   }
   .ulBlock li a {
-    font-size: 32px;
+    font-size: 32px !important;
   }
   .topCasinoSection {
     gap: 40px;

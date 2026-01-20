@@ -58,7 +58,7 @@ export function renderTopCasino() {
             : "",
       });
 
-      const btn = createEl("button", { className: "button-secondary" });
+      const btn = createEl("a", { className: "button-secondary", attrs: { href: `casino/${offer.id}` }});
       btn.textContent = "Claim Bonus";
       btn.addEventListener("click", (ev) => {
         ev.preventDefault();

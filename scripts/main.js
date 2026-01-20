@@ -10,9 +10,9 @@ import { renderFAQ } from "./components/faq.js";
 
 async function init() {
   try {
-    renderApp();
     renderFAQ();
     await loadData();
+    renderApp();
     renderHeader();
     setupRedirectIfNeeded();
     renderBonus();

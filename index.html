@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -126,7 +126,10 @@
       rel="preload"
       href="/styles/rest.min.css"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
     <noscript><link rel="stylesheet" href="/styles/rest.min.css" /></noscript>
     <link rel="preconnect" href="https://api.adkey-seo.com" crossorigin />
@@ -184,7 +187,7 @@
               </label>
             </div>
 
-            <button class="register">Play Now</button>
+            <a href="/casino/" class="register">Play Now</a>
           </div>
         </div>
       </div>
@@ -200,7 +203,7 @@
               <p class="bonus-text mobile">
                 Exclusive welcome bonus of <span></span>
               </p>
-              <button class="button-primary bonusButton">Claim Bonus</button>
+              <a href="/casino/" class="button-primary bonusButton">Claim Bonus</a>
             </div>
             <div class="bonusSection_right"></div>
           </div>
@@ -508,16 +511,15 @@
                 </p>
               </div>
               <div class="downloadBlock desktop">
-                <button class="appButton">
+                <a href="/casino/" class="appButton">
                   <img
                     src="./public/googleplay.png"
                     width="175"
                     height="52"
                     alt="Crown Casino Online in Google Play"
                     title="Crown Casino Online in Google Play"
-                    loading="lazy"
-                  /></button
-                ><button class="appButton">
+                    loading="lazy" /></a
+                ><a href="/casino/" class="appButton">
                   <img
                     src="./public/appstore2.png"
                     width="156"
@@ -526,19 +528,18 @@
                     title="Crown Casino Online in App Store"
                     loading="lazy"
                   />
-                </button>
+                </a>
               </div>
               <div class="downloadBlock mobile">
-                <button class="appButton">
+                <a href="/casino/" class="appButton">
                   <img
                     src="./public//googleplay.png"
                     width="181"
                     height="54"
                     alt="Crown Casino Online in Google Play"
                     title="Crown Casino Online in Google Play"
-                    loading="lazy"
-                  /></button
-                ><button class="appButton">
+                    loading="lazy" /></a
+                ><a href="/casino/" class="appButton">
                   <img
                     src="./public//appstore.png"
                     width="181"
@@ -547,7 +548,7 @@
                     title="Crown Casino Online in App Store"
                     loading="lazy"
                   />
-                </button>
+                </a>
               </div>
             </div>
             <div class="appSection_imgBlock">
@@ -1104,7 +1105,7 @@
         </div>
       </div>
     </footer>
-    <script src="./dist/bundle.js" defer></script>
-    <!-- <script type="module" src="./scripts/main.js"></script> -->
+    <!-- <script src="./dist/bundle.js" defer></script> -->
+    <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>

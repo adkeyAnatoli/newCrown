@@ -11,10 +11,14 @@ export function renderApp() {
 
   const allButtons = document.querySelectorAll(".appButton");
   allButtons.forEach((button) => {
+    if (appState.offer) {
+      button.setAttribute("href", `/casino/${appState.offer.id}`);
+    }
     button.addEventListener("click", (ev) => {
       ev.preventDefault();
-      if (appState.offer)
+      if (appState.offer) {
         navigateToOffer(appState.offer.id, appState.offer.link);
+      }
     });
   });
 }

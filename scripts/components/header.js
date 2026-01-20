@@ -32,6 +32,7 @@ export function renderHeader() {
   if (offer) {
     const play = header.querySelector(".register");
     if (play) {
+      play.setAttribute("href", `/casino/${offer.id}`);
       play.addEventListener("click", (ev) => {
         ev.preventDefault();
         if (appState.offer)

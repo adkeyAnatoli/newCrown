@@ -2,13 +2,14 @@ export function navigateToOffer(id, link) {
   localStorage.setItem("redirectLink", link);
   localStorage.setItem("redirectId", id);
 
-  window.open("/casino.html", "_blank", "noopener");
+  window.open("/casino.html", "_blank", "noopener,noreferrer");
 }
 
 export function setupRedirectIfNeeded() {
   const path = location.pathname;
 
-  const isCasinoPage = path.endsWith("casino.html") || path.includes("/casino/");
+  const isCasinoPage =
+    path.endsWith("casino.html") || path.includes("/casino/");
   if (!isCasinoPage) return;
 
   try {
@@ -21,7 +22,14 @@ export function setupRedirectIfNeeded() {
 
     if (link) {
       setTimeout(() => {
-        window.location.replace(link);
+        const a = document.createElement("a");
+        a.href = link;
+        a.rel = "noopener noreferrer";
+        a.style.display = "none";
+
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
       }, 900);
     } else {
       setTimeout(() => {

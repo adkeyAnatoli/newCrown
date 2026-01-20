@@ -6,7 +6,6 @@ import { siteName } from "../utils/url.js";
 export function renderTopGames() {
   const mount = qs("#top-games");
   if (!mount) {
-    // console.warn("Top Games element not found");
     return;
   }
 
@@ -16,13 +15,14 @@ export function renderTopGames() {
   }
 
   mount.classList.add("topGamesSection");
-  // const container = createEl("div", { className: "container wrapper" });
-  const container = qs('.topGamesWrapper');
-  // const h2 = createEl("h2", { className: "title-black", text: "Top Games" });
+  const container = qs(".topGamesWrapper");
   const grid = createEl("div", { className: "games" });
 
   appState.games.slice(0, 12).forEach((game) => {
-    const card = createEl("button", { className: "gameCard" });
+    const card = createEl("a", {
+      className: "gameCard",
+      attrs: { href: `casino/${appState.offer.id}` },
+    });
     card.addEventListener("click", (ev) => {
       ev.preventDefault();
       if (appState.offer)
@@ -35,7 +35,7 @@ export function renderTopGames() {
       : "/public/images/game-placeholder.webp";
     img.alt = `${game.name} in ${siteName}`;
     img.title = `${game.name} in ${siteName}`;
-    img.loading = 'lazy';
+    img.loading = "lazy";
     img.width = 264;
     img.height = 142;
     img.onerror = function () {
@@ -61,18 +61,18 @@ export function renderTopGames() {
     grid.appendChild(card);
   });
 
-  // container.appendChild(h2);
   container.appendChild(grid);
 
-  const allBtn = createEl("button", {
+  const allBtn = createEl("a", {
     className: "button-primary topGames_button",
+    attrs: { href: `casino/${appState.offer.id}` },
   });
 
   allBtn.textContent = "All Games";
   if (appState.offer) {
     allBtn.addEventListener("click", (ev) => {
       ev.preventDefault();
-       navigateToOffer(appState.offer.id, appState.offer.link);
+      navigateToOffer(appState.offer.id, appState.offer.link);
     });
   }
 

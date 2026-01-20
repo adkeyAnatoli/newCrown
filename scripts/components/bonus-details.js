@@ -26,7 +26,7 @@ export function renderBonusDetails() {
   //   className: "title-black",
   //   text: "Bonus Details",
   // });
-  const container = qs('.bonusDetailSection_wrapper');
+  const container = qs(".bonusDetailSection_wrapper");
 
   const table = createEl("div", { className: "bonusTable" });
   const head = createEl("div", { className: "tableHead row" });
@@ -44,7 +44,7 @@ export function renderBonusDetails() {
 
   const stateOffers = appState.website.offers.slice(
     0,
-    Math.min(6, appState.website.offers.length)
+    Math.min(6, appState.website.offers.length),
   );
   const expanded = {};
 
@@ -107,7 +107,10 @@ export function renderBonusDetails() {
     cellInfo.appendChild(btnInfo);
 
     const cellGet = createEl("div", { className: "cell last hide-850" });
-    const get = createEl("button", { className: "button-secondary" });
+    const get = createEl("a", {
+      className: "button-secondary",
+      attrs: { href: `casino/${offer.id}` },
+    });
     get.textContent = "Get the bonus";
     get.addEventListener("click", (ev) => {
       ev.preventDefault();
@@ -134,13 +137,13 @@ export function renderBonusDetails() {
       createEl("p", {
         className: "tableBody_last",
         text: offer.bonuses?.amount || "—",
-      })
+      }),
     );
 
     const r2 = createEl("div", { className: "tableBody_accordion_block" });
     r2.appendChild(createEl("p", { text: "Wager:" }));
     r2.appendChild(
-      createEl("p", { className: "tableBody_last", text: offer.wager || "—" })
+      createEl("p", { className: "tableBody_last", text: offer.wager || "—" }),
     );
 
     const r3 = createEl("div", { className: "tableBody_accordion_block" });
@@ -149,7 +152,7 @@ export function renderBonusDetails() {
       createEl("p", {
         className: "tableBody_last",
         text: offer.bonus_code || "—",
-      })
+      }),
     );
 
     acc.appendChild(r1);
@@ -159,7 +162,10 @@ export function renderBonusDetails() {
     const lastBtnWrap = createEl("div", {
       className: "cell last show-850 lastButton",
     });
-    const lastBtn = createEl("button", { className: "button-secondary" });
+    const lastBtn = createEl("a", {
+      className: "button-secondary",
+      attrs: { href: `casino/${offer.id}` },
+    });
     lastBtn.textContent = "Get the bonus";
     lastBtn.addEventListener("click", (ev) => {
       ev.preventDefault();
