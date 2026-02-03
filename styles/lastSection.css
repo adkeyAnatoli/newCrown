@@ -41,6 +41,10 @@
   list-style: decimal inside;
 }
 
+.lastBlockElement.black .faqElement {
+  background: #242424;
+}
+
 @media (max-width: 1100px) {
   #last .listBlock > div {
     width: 50%;
@@ -53,7 +57,9 @@
     gap: 24px;
   }
 
-  #last h3 {
+  #last h3,
+  .listBlock h4,
+  .lastBlockElement h4 {
     font-size: 18px;
     font-weight: var(--font-weight-second);
   }
